@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Élève ingénieur Data & Systèmes d’Information</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F6;--surface:#FFFFFF;--ink:#101828;--muted:#566176;--line:#C9D2E0;--accent:#2F4BFF;--accent-ink:#FFFFFF;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1320;--surface:#151C2E;--ink:#E8ECF5;--muted:#94A1B9;--line:#28324A;--accent:#8196FF;--accent-ink:#0E1320;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0E1320;--surface:#151C2E;--ink:#E8ECF5;--muted:#94A1B9;--line:#28324A;--accent:#8196FF;--accent-ink:#0E1320;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem 0;flex-wrap:wrap}
+header.top strong{font-weight:800;letter-spacing:-.02em}
+nav a{margin-left:1.4rem;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding:clamp(2rem,6vw,4.5rem) 0 clamp(3rem,7vw,5.5rem)}
+h1{font-size:clamp(2.7rem,7.5vw,5.2rem);line-height:.98;letter-spacing:-.04em;font-weight:800;margin:0 0 1.4rem}
+.lead{font-size:1.2rem;max-width:34ch;margin:0 0 1.2rem}
+.sub{color:var(--muted);max-width:44ch;margin:0 0 2rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:10px;text-decoration:none;font-weight:600;border:2px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.sim{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.9rem}
+#cv{display:block;width:100%;aspect-ratio:26/16;border-radius:8px}
+.simbar{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:.8rem;font-size:.9rem;color:var(--muted)}
+.simbar b{color:var(--ink)}
+.simbar button{font:inherit;font-size:.9rem;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:.3rem .8rem;cursor:pointer}
+.dot{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:var(--accent);margin-right:.35rem}
+.sq{display:inline-block;width:.7rem;height:.7rem;background:var(--ink);margin:0 .35rem 0 .9rem}
+section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.03em;line-height:1.1;margin:0 0 2rem;font-weight:800}
+.row{display:grid;grid-template-columns:170px 1fr;gap:1rem 2rem;padding:1.6rem 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.date{color:var(--muted);font-size:.95rem}
+.row h3{font-size:1.4rem;letter-spacing:-.02em;margin:0 0 .5rem;line-height:1.2}
+.row p{margin:0 0 .9rem;max-width:62ch}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;padding:0;margin:0;list-style:none}
+.tags li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .75rem;font-size:.88rem}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.skills h3{font-size:1rem;color:var(--muted);font-weight:600;margin:0 0 .8rem}
+.contact p{max-width:48ch;color:var(--muted);margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:.3rem}
+  .skills{grid-template-columns:1fr}
+  nav a{margin:0 1rem 0 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>Prénom Nom</strong>
+    <nav aria-label="Navigation principale">
+      <a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Je transforme des données en décisions.</h1>
+        <p class="lead">Élève ingénieur en Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision, à l’ISIMA.</p>
+        <p class="sub">Je construis des pipelines de données, des API et des tableaux de bord. Je recherche un stage ou une alternance en data ou en développement logiciel.</p>
+        <div class="btns">
+          <a class="btn main" href="#projets">Voir mes projets</a>
+          <a class="btn" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <div class="sim">
+        <canvas id="cv" role="img" aria-label="Simulation en direct : des loups poursuivent des moutons sur une grille"></canvas>
+        <div class="simbar">
+          <span><span class="dot"></span>Moutons <b id="ns">0</b><span class="sq"></span>Loups <b id="nw">0</b></span>
+          <button id="rst" type="button">Relancer</button>
+        </div>
+        <div class="simbar" style="margin-top:.4rem">Démo de mon projet de système multi-agents, en direct.</div>
+      </div>
+    </div>
+
+    <section id="projets">
+      <h2>Projets</h2>
+      <div id="plist"></div>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div><h3>Langages</h3><ul class="tags"><li>Java</li><li>Python</li><li>C</li><li>SQL</li></ul></div>
+        <div><h3>Développement web</h3><ul class="tags"><li>Spring Boot</li><li>Angular</li><li>Vue.js</li><li>Tailwind CSS</li><li>API REST</li></ul></div>
+        <div><h3>Data</h3><ul class="tags"><li>DuckDB</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Power BI</li><li>PostgreSQL</li></ul></div>
+      </div>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="row"><div class="date">Octobre 2026 – présent</div><div><h3>Cours particuliers, Complétude</h3><p>Clermont-Ferrand</p></div></div>
+      <div class="row"><div class="date">Avril &amp; août 2026</div><div><h3>Échange académique, OTH Regensburg (Allemagne)</h3><p>Optimisation et programmation linéaire en équipe internationale : deux semaines en Allemagne, deux semaines en France.</p></div></div>
+      <div class="row"><div class="date">2025 – 2028</div><div><h3>Diplôme d’ingénieur, ISIMA (INP Clermont-Ferrand)</h3><p>Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision.</p></div></div>
+      <div class="row"><div class="date">Étés 2024 &amp; 2025</div><div><h3>Équipière polyvalente, restauration rapide</h3><p>Bordeaux</p></div></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Travaillons ensemble</h2>
+      <p>Un stage, une alternance ou un projet à discuter ? Écris-moi, je réponds vite.</p>
+      <div class="btns">
+        <a class="btn main" href="mailto:prenom.nom@email.com">prenom.nom@email.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/ton-profil" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/ton-profil" rel="noopener">GitHub</a>
+        <a class="btn" href="#">Télécharger mon CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Prénom Nom</footer>
+</div>
+
+<script>
+const PROJECTS=[
+ {t:"Plateforme d’analyse et de suivi de données de transport",d:"septembre 2026 – présent",p:"API REST en Spring Boot et interface web en Angular. Consolidation de 4 Go de données avec Python, DuckDB et SQL, et tableaux de bord Power BI pour suivre les indicateurs clés. Pistes explorées : détection de fraude, prévision du trafic, optimisation du réseau.",k:["Java","Spring Boot","Angular","Python","DuckDB","SQL","Power BI"]},
+ {t:"Analyse et classification de données de capteurs",d:"septembre 2026 – présent",p:"Prétraitement de données issues de plusieurs capteurs, gestion des valeurs manquantes, comparaison et optimisation de modèles de classification.",k:["Python","Scikit-learn","Pandas","NumPy"]},
+ {t:"Système multi-agents",d:"juin 2026",p:"Simulation d’une dynamique proie-prédateur (loups et moutons) par apprentissage par renforcement, sur une grille, avec visualisation en temps réel. La démo en haut de la page s’en inspire.",k:["C","SDL2","RL","SMA"]},
+ {t:"Application web de gestion et de recherche d’images",d:"février – avril 2025",p:"Application web avec interface responsive et API REST, développée avec Spring Boot, Vue.js et PostgreSQL.",k:["Spring Boot","Vue.js","PostgreSQL","Spring JDBC","Tailwind CSS"]}
+];
+document.getElementById("plist").innerHTML=PROJECTS.map(x=>
+ `<article class="row"><div class="date">${x.d}</div><div><h3>${x.t}</h3><p>${x.p}</p><ul class="tags">${x.k.map(k=>`<li>${k}</li>`).join("")}</ul></div></article>`).join("");
+
+/* Simulation loups / moutons */
+const W=26,H=16,D=[[1,0],[-1,0],[0,1],[0,-1]],cv=document.getElementById("cv"),ctx=cv.getContext("2d");
+const r=n=>Math.floor(Math.random()*n);
+let sheep,wolves,timer;
+function reset(){
+  sheep=Array.from({length:22},()=>({x:r(W),y:r(H)}));
+  wolves=Array.from({length:3},()=>({x:r(W),y:r(H),e:8}));
+  draw();
+}
+function step(){
+  for(const s of sheep){const d=D[r(4)];s.x=(s.x+d[0]+W)%W;s.y=(s.y+d[1]+H)%H}
+  if(sheep.length<60)for(const s of sheep.slice())if(Math.random()<.04)sheep.push({x:s.x,y:s.y});
+  for(const w of wolves){
+    let b=null,bd=99;
+    for(const s of sheep){const d=Math.abs(s.x-w.x)+Math.abs(s.y-w.y);if(d<bd){bd=d;b=s}}
+    if(b&&bd<8){const dx=Math.sign(b.x-w.x),dy=Math.sign(b.y-w.y);if(dx&&(!dy||Math.random()<.5))w.x+=dx;else w.y+=dy}
+    else{const d=D[r(4)];w.x=(w.x+d[0]+W)%W;w.y=(w.y+d[1]+H)%H}
+    w.e--;
+    const i=sheep.findIndex(s=>s.x===w.x&&s.y===w.y);
+    if(i>-1){sheep.splice(i,1);w.e+=5}
+  }
+  wolves=wolves.filter(w=>w.e>0);
+  for(const w of wolves.slice())if(w.e>14&&wolves.length<10){w.e-=7;wolves.push({x:w.x,y:w.y,e:7})}
+  while(sheep.length<6)sheep.push({x:r(W),y:r(H)});
+  if(!wolves.length)wolves.push({x:r(W),y:r(H),e:8});
+  draw();
+}
+function fit(){
+  const b=cv.getBoundingClientRect(),q=window.devicePixelRatio||1;
+  cv.width=Math.round(b.width*q);cv.height=Math.round(b.height*q);draw();
+}
+function draw(){
+  const c=cv.width/W,s=getComputedStyle(document.documentElement);
+  const line=s.getPropertyValue("--line").trim(),acc=s.getPropertyValue("--accent").trim(),ink=s.getPropertyValue("--ink").trim();
+  ctx.clearRect(0,0,cv.width,cv.height);
+  ctx.strokeStyle=line;ctx.lineWidth=1;ctx.globalAlpha=.55;ctx.beginPath();
+  for(let i=0;i<=W;i++){ctx.moveTo(i*c,0);ctx.lineTo(i*c,H*c)}
+  for(let j=0;j<=H;j++){ctx.moveTo(0,j*c);ctx.lineTo(W*c,j*c)}
+  ctx.stroke();ctx.globalAlpha=1;
+  ctx.fillStyle=acc;
+  for(const a of sheep){ctx.beginPath();ctx.arc((a.x+.5)*c,(a.y+.5)*c,c*.32,0,7);ctx.fill()}
+  ctx.fillStyle=ink;
+  for(const w of wolves)ctx.fillRect(w.x*c+c*.18,w.y*c+c*.18,c*.64,c*.64);
+  document.getElementById("ns").textContent=sheep.length;
+  document.getElementById("nw").textContent=wolves.length;
+}
+const calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+reset();fit();
+if(calm){for(let i=0;i<30;i++)step()}else{timer=setInterval(()=>{if(!document.hidden)step()},200)}
+document.getElementById("rst").onclick=()=>{reset();if(calm)for(let i=0;i<30;i++)step()};
+addEventListener("resize",fit);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
+</script>
+</body>
+</html>
