@@ -143,6 +143,50 @@ section{padding:clamp(3rem,7vw,5.5rem) 0}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-family:"Sora",system-ui,sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:-.02em}
 .brand .mono{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;font-size:.95rem;font-weight:800;letter-spacing:0;color:#2E2A26;
   background:linear-gradient(135deg,var(--lilac),var(--mint));box-shadow:0 0 0 1px var(--edge),0 6px 14px -6px color-mix(in srgb,var(--ink) 40%,transparent)}
+
+/* ===== Version professionnelle : sobre, structurée ===== */
+:root{--accent:#2F5D62;--r:10px}
+:root[data-theme="dark"]{--accent:#8CC5C0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#8CC5C0}}
+body{background-image:none;font-size:1.03rem}
+.hero::before{display:none}
+.bar{display:none}
+.hero{grid-template-columns:1fr;padding:clamp(3rem,8vw,6rem) 0 clamp(2.5rem,6vw,4.5rem)}
+.hero>div{max-width:46rem}
+.chip{display:inline-flex;align-items:center;gap:.55rem;background:transparent;border:1px solid var(--edge);color:var(--muted);font-weight:500;font-size:.88rem;padding:.3rem .9rem}
+.chip::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:#4E9F7D}
+h1{font-size:clamp(2.2rem,5.2vw,3.7rem);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:600;letter-spacing:-.02em;padding-bottom:.9rem;margin-bottom:1.8rem;border-bottom:1px solid var(--edge)}
+.lead{font-weight:400;color:var(--ink);max-width:44ch}
+.sub{max-width:52ch}
+section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+.btn{border-radius:var(--r);font-weight:600;padding:.7rem 1.35rem}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.main{color:#16221F}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.main{color:#16221F}}
+.btn:hover{transform:none;box-shadow:0 8px 20px -12px color-mix(in srgb,var(--ink) 60%,transparent)}
+.win{border-radius:var(--r);border:1px solid var(--edge);border-top:3px solid var(--c,var(--accent));box-shadow:none;background:var(--surface)}
+.card:hover{box-shadow:0 18px 36px -24px color-mix(in srgb,var(--ink) 55%,transparent)}
+.card .txt,.skills .txt{padding:1.3rem 1.4rem 1.5rem}
+.tags li{border-radius:6px;border:1px solid var(--edge);background:color-mix(in srgb,var(--c,var(--accent)) 14%,var(--surface));font-weight:500;font-size:.8rem;padding:.12rem .6rem}
+.avatar::before{display:none}
+.avatar img,.avatar .ph{border:4px solid var(--surface);box-shadow:0 0 0 1px var(--edge),0 18px 36px -22px color-mix(in srgb,var(--ink) 55%,transparent)}
+.brand .mono{background:var(--ink);color:var(--bg);box-shadow:none;border-radius:10px;font-size:.85rem}
+nav a{border-radius:8px}
+nav a:hover{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.tl li::before{background:var(--accent);width:11px;height:11px;border:2px solid var(--bg);left:calc(-2rem - 6px);top:.5rem}
+.contact .txt h2{border:0;padding:0;margin-bottom:.6rem}
+
+/* ===== Fond informatique / data, discret ===== */
+body::before{opacity:1;background-image:linear-gradient(to right,color-mix(in srgb,var(--ink) 6%,transparent) 1px,transparent 1px),linear-gradient(to bottom,color-mix(in srgb,var(--ink) 6%,transparent) 1px,transparent 1px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' fill='none' stroke='%238AA39F' stroke-opacity='.6' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M40 130 80 96 120 112 160 64 200 80M30 150h190'/%3E%3Ccircle cx='80' cy='96' r='4'/%3E%3Ccircle cx='160' cy='64' r='4'/%3E%3Ccircle cx='200' cy='80' r='4'/%3E%3Ccircle cx='420' cy='90' r='7'/%3E%3Ccircle cx='490' cy='50' r='7'/%3E%3Ccircle cx='540' cy='120' r='7'/%3E%3Ccircle cx='480' cy='170' r='7'/%3E%3Cpath d='m426 86 58-32M497 54l38 58M535 126l-48 40M474 166l-48-70'/%3E%3Crect x='50' y='420' width='18' height='40'/%3E%3Crect x='80' y='400' width='18' height='60'/%3E%3Crect x='110' y='430' width='18' height='30'/%3E%3Crect x='140' y='380' width='18' height='80'/%3E%3Cpath d='M40 460h130'/%3E%3Cpath d='M300 330 276 354l24 24M360 330l24 24-24 24M340 322 320 386'/%3E%3Cellipse cx='500' cy='440' rx='34' ry='11'/%3E%3Cpath d='M466 440v50a34 11 0 0 0 68 0v-50M466 465a34 11 0 0 0 68 0'/%3E%3Cpath d='M230 520h90M230 540h140M230 560h70M250 60h8M254 56v8M570 300h8M574 296v8M20 300h8M24 296v8'/%3E%3C/svg%3E");
+  background-size:56px 56px,56px 56px,600px 600px;
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 45%,rgba(0,0,0,.25),#000 85%);mask-image:radial-gradient(ellipse 70% 60% at 50% 45%,rgba(0,0,0,.25),#000 85%)}
+.heroart{display:none;color:var(--accent)}
+@media (min-width:1100px){
+  .hero{position:relative}
+  .hero>div{max-width:33rem}
+  .heroart{display:block;position:absolute;right:0;top:50%;transform:translateY(-50%);width:27rem;height:auto}
+}
 </style>
 </head>
 <body>
@@ -157,26 +201,27 @@ section{padding:clamp(3rem,7vw,5.5rem) 0}
   <main>
     <div class="hero">
       <div>
-        <span class="chip">Recherche un stage Data / Business Intelligence de 4 à 6 mois, dès mars 2027</span>
+        <span class="chip">Disponible dès mars 2027, stage de 4 à 6 mois</span>
         <h1>Je transforme des données en décisions.</h1>
-        <p class="lead">Élève ingénieur en Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision, à l’ISIMA.</p>
-        <p class="sub">Je construis des pipelines de données, des API et des tableaux de bord. Je recherche un stage Data / Business Intelligence de 4 à 6 mois, dès mars 2027.</p>
+        <p class="lead">Élève ingénieure en Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision, à l’ISIMA.</p>
+        <p class="sub">Je construis des pipelines de données, des API et des tableaux de bord. Je recherche un stage Data / Business Intelligence.</p>
         <div class="btns">
           <a class="btn main" href="#projets">Voir mes projets</a>
           <a class="btn" href="#contact">Me contacter</a>
         </div>
       </div>
-      <div class="win sim" style="--c:var(--mint)">
-        <div class="bar"><i></i><i></i><i></i><span>simulation_multi_agents.c</span></div>
-        <div class="body">
-          <canvas id="cv" role="img" aria-label="Simulation en direct : des loups poursuivent des moutons sur une grille"></canvas>
-          <div class="simbar">
-            <span><span class="dot"></span>Moutons <b id="ns">0</b><span class="sq"></span>Loups <b id="nw">0</b></span>
-            <button id="rst" type="button">Relancer</button>
-          </div>
-          <div class="simbar" style="margin-top:.4rem">Démo de mon projet de système multi-agents, en direct.</div>
-        </div>
-      </div>
+      <svg class="heroart" viewBox="0 0 460 340" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="2" width="456" height="336" rx="16" stroke-opacity=".35" fill="var(--surface)" fill-opacity=".6"/>
+        <path d="M2 48h456M24 25h60M96 25h30" stroke-opacity=".3"/>
+        <g fill="currentColor" fill-opacity=".16" stroke="none"><rect x="32" y="200" width="30" height="100" rx="4"/><rect x="76" y="160" width="30" height="140" rx="4"/><rect x="120" y="210" width="30" height="90" rx="4"/><rect x="164" y="130" width="30" height="170" rx="4"/><rect x="208" y="170" width="30" height="130" rx="4"/></g>
+        <polyline points="47,170 91,120 135,150 179,84 223,112" stroke-opacity=".9"/>
+        <g fill="var(--surface)"><circle cx="47" cy="170" r="5"/><circle cx="91" cy="120" r="5"/><circle cx="135" cy="150" r="5"/><circle cx="179" cy="84" r="5"/><circle cx="223" cy="112" r="5"/></g>
+        <path d="M32 300h214" stroke-opacity=".35"/>
+        <path d="m338 104 52-24 30 70M338 104l-38 66 60 20 60-40M300 170l60 20M390 80l-52 24" stroke-opacity=".5"/>
+        <g fill="var(--surface)"><circle cx="338" cy="104" r="8"/><circle cx="390" cy="80" r="8"/><circle cx="420" cy="150" r="8"/><circle cx="360" cy="190" r="8"/><circle cx="300" cy="170" r="8"/></g>
+        <circle cx="338" cy="104" r="4" fill="currentColor" stroke="none"/>
+        <path d="M290 246h90M290 266h130M290 286h60M290 306h104" stroke-opacity=".4"/>
+      </svg>
     </div>
 
     <section id="profil">
@@ -270,65 +315,12 @@ function bindFallback(root){
 }
 document.getElementById("me").addEventListener("error",e=>{
   const p=document.createElement("div");p.className="ph";
-  p.innerHTML="<div>PN<small>Ajoute photo.jpg</small></div>";e.target.replaceWith(p)});
+  p.innerHTML="<div>AT<small>Ajoute photo.jpg</small></div>";e.target.replaceWith(p)});
 const pl=document.getElementById("plist");
 pl.innerHTML=PROJECTS.map(x=>
  `<article class="win card" style="--c:${x.c}"><div class="bar"><i></i><i></i><i></i><span>${x.v||"projet.md"}</span></div>${x.v?media(x.v,"Démo : "+x.t):""}<div class="txt"><h3>${x.t}</h3><p class="date">${x.d}</p><p class="d">${x.p}</p><ul class="tags">${x.k.map(k=>`<li>${k}</li>`).join("")}</ul></div></article>`).join("");
 bindFallback(pl);
 
-/* Simulation loups / moutons */
-const W=26,H=16,D=[[1,0],[-1,0],[0,1],[0,-1]],cv=document.getElementById("cv"),ctx=cv.getContext("2d");
-const r=n=>Math.floor(Math.random()*n);
-let sheep,wolves,timer;
-function reset(){
-  sheep=Array.from({length:22},()=>({x:r(W),y:r(H)}));
-  wolves=Array.from({length:3},()=>({x:r(W),y:r(H),e:8}));
-  draw();
-}
-function step(){
-  for(const s of sheep){const d=D[r(4)];s.x=(s.x+d[0]+W)%W;s.y=(s.y+d[1]+H)%H}
-  if(sheep.length<60)for(const s of sheep.slice())if(Math.random()<.04)sheep.push({x:s.x,y:s.y});
-  for(const w of wolves){
-    let b=null,bd=99;
-    for(const s of sheep){const d=Math.abs(s.x-w.x)+Math.abs(s.y-w.y);if(d<bd){bd=d;b=s}}
-    if(b&&bd<8){const dx=Math.sign(b.x-w.x),dy=Math.sign(b.y-w.y);if(dx&&(!dy||Math.random()<.5))w.x+=dx;else w.y+=dy}
-    else{const d=D[r(4)];w.x=(w.x+d[0]+W)%W;w.y=(w.y+d[1]+H)%H}
-    w.e--;
-    const i=sheep.findIndex(s=>s.x===w.x&&s.y===w.y);
-    if(i>-1){sheep.splice(i,1);w.e+=5}
-  }
-  wolves=wolves.filter(w=>w.e>0);
-  for(const w of wolves.slice())if(w.e>14&&wolves.length<10){w.e-=7;wolves.push({x:w.x,y:w.y,e:7})}
-  while(sheep.length<6)sheep.push({x:r(W),y:r(H)});
-  if(!wolves.length)wolves.push({x:r(W),y:r(H),e:8});
-  draw();
-}
-function fit(){
-  const b=cv.getBoundingClientRect(),q=window.devicePixelRatio||1;
-  cv.width=Math.round(b.width*q);cv.height=Math.round(b.height*q);draw();
-}
-function draw(){
-  const c=cv.width/W,s=getComputedStyle(document.documentElement),g=n=>s.getPropertyValue(n).trim();
-  const line=g("--dots"),sh=g("--peach"),wf=g("--lilac"),ink=g("--ink");
-  ctx.clearRect(0,0,cv.width,cv.height);
-  ctx.strokeStyle=line;ctx.lineWidth=1;ctx.beginPath();
-  for(let i=0;i<=W;i++){ctx.moveTo(i*c,0);ctx.lineTo(i*c,H*c)}
-  for(let j=0;j<=H;j++){ctx.moveTo(0,j*c);ctx.lineTo(W*c,j*c)}
-  ctx.stroke();
-  ctx.lineWidth=Math.max(1,c*.035);ctx.strokeStyle=ink;
-  ctx.fillStyle=sh;
-  for(const a of sheep){ctx.beginPath();ctx.arc((a.x+.5)*c,(a.y+.5)*c,c*.3,0,7);ctx.fill();ctx.stroke()}
-  ctx.fillStyle=wf;
-  for(const w of wolves){ctx.fillRect(w.x*c+c*.15,w.y*c+c*.15,c*.7,c*.7);ctx.strokeRect(w.x*c+c*.15,w.y*c+c*.15,c*.7,c*.7)}
-  document.getElementById("ns").textContent=sheep.length;
-  document.getElementById("nw").textContent=wolves.length;
-}
-const calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
-reset();fit();
-if(calm){for(let i=0;i<30;i++)step()}else{timer=setInterval(()=>{if(!document.hidden)step()},200)}
-document.getElementById("rst").onclick=()=>{reset();if(calm)for(let i=0;i<30;i++)step()};
-addEventListener("resize",fit);
-matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
 </script>
 </body>
 </html>
