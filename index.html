@@ -3,143 +3,279 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Portfolio – Élève ingénieur Data & Systèmes d’Information</title>
+<title>Amani Trabelsi – Portfolio, élève ingénieure Data & Business Intelligence</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#EDF1F6;--surface:#FFFFFF;--ink:#101828;--muted:#566176;--line:#C9D2E0;--accent:#2F4BFF;--accent-ink:#FFFFFF;
+  --bg:#F4EDE1;--surface:#FFFBF4;--ink:#2E2A26;--muted:#6E655A;--line:#E2D7C4;--dots:#DCCFB8;
+  --mint:#BFD8C2;--lilac:#CFC3E6;--peach:#F0C9B0;--sky:#B9D3E4;--butter:#EFDDA6;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0E1320;--surface:#151C2E;--ink:#E8ECF5;--muted:#94A1B9;--line:#28324A;--accent:#8196FF;--accent-ink:#0E1320;color-scheme:dark}
+  :root:not([data-theme="light"]){--bg:#1F1B17;--surface:#2A251F;--ink:#F3EBDD;--muted:#B9AD9B;--line:#3B342B;--dots:#342E26;
+  --mint:#8DB596;--lilac:#A99BCB;--peach:#D99B7A;--sky:#7FA9C4;--butter:#D5B964;color-scheme:dark}
 }
-:root[data-theme="dark"]{--bg:#0E1320;--surface:#151C2E;--ink:#E8ECF5;--muted:#94A1B9;--line:#28324A;--accent:#8196FF;--accent-ink:#0E1320;color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+:root[data-theme="dark"]{--bg:#1F1B17;--surface:#2A251F;--ink:#F3EBDD;--muted:#B9AD9B;--line:#3B342B;--dots:#342E26;
+  --mint:#8DB596;--lilac:#A99BCB;--peach:#D99B7A;--sky:#7FA9C4;--butter:#D5B964;color-scheme:dark}
+html{scroll-padding-top:5rem;scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6}
+body{margin:0;color:var(--ink);font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.65;
+  background-color:var(--bg);
+  background-image:radial-gradient(circle at 0% 0%,color-mix(in srgb,var(--mint) 38%,transparent),transparent 45%),radial-gradient(circle at 100% 18%,color-mix(in srgb,var(--lilac) 38%,transparent),transparent 45%),radial-gradient(circle at 0% 70%,color-mix(in srgb,var(--peach) 34%,transparent),transparent 45%),radial-gradient(circle at 100% 100%,color-mix(in srgb,var(--sky) 38%,transparent),transparent 45%);
+  background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' fill='none' stroke='%23A8977F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M44 62 28 78l16 16M88 62l16 16-16 16M70 56 60 100'/%3E%3Cellipse cx='260' cy='52' rx='28' ry='10'/%3E%3Cpath d='M232 52v38a28 10 0 0 0 56 0V52M232 71a28 10 0 0 0 56 0'/%3E%3Cpath d='M60 350V290M60 350h76'/%3E%3Crect x='72' y='322' width='12' height='28'/%3E%3Crect x='94' y='306' width='12' height='44'/%3E%3Crect x='116' y='290' width='12' height='60'/%3E%3Cpath d='M290 330a16 16 0 0 1 4-31 22 22 0 0 1 42 4 14 14 0 0 1 2 27z'/%3E%3Crect x='176' y='176' width='46' height='46' rx='7'/%3E%3Crect x='189' y='189' width='20' height='20' rx='3'/%3E%3Cpath d='M187 176v-10M199 176v-10M211 176v-10M187 222v10M199 222v10M211 222v10M176 187h-10M176 199h-10M176 211h-10M222 187h10M222 199h10M222 211h10'/%3E%3Cpath d='M352 128c-14 0-14 10-14 18s0 14-8 14c8 0 8 6 8 14s0 18 14 18M376 128c14 0 14 10 14 18s0 14 8 14c-8 0-8 6-8 14s0 18-14 18' transform='translate(-30 -6)'/%3E%3Ccircle cx='110' cy='170' r='6'/%3E%3Ccircle cx='146' cy='140' r='6'/%3E%3Ccircle cx='150' cy='196' r='6'/%3E%3Cpath d='m115 166 26-22M114 175l30 18'/%3E%3Ccircle cx='350' cy='250' r='15'/%3E%3Cpath d='m361 261 14 14'/%3E%3Cpath d='M230 380h10M235 375v10M20 220h10M25 215v10M390 60h10M395 55v10'/%3E%3Cpath d='M210 280l-12 10 12 10M240 280l12 10-12 10'/%3E%3C/svg%3E");
+  background-size:420px 420px}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
-header.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem 0;flex-wrap:wrap}
-header.top strong{font-weight:800;letter-spacing:-.02em}
-nav a{margin-left:1.4rem;text-decoration:none;color:var(--muted);font-size:.95rem}
-nav a:hover{color:var(--ink)}
-.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding:clamp(2rem,6vw,4.5rem) 0 clamp(3rem,7vw,5.5rem)}
-h1{font-size:clamp(2.7rem,7.5vw,5.2rem);line-height:.98;letter-spacing:-.04em;font-weight:800;margin:0 0 1.4rem}
-.lead{font-size:1.2rem;max-width:34ch;margin:0 0 1.2rem}
-.sub{color:var(--muted);max-width:44ch;margin:0 0 2rem}
-.btns{display:flex;gap:.8rem;flex-wrap:wrap}
-.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:10px;text-decoration:none;font-weight:600;border:2px solid var(--ink)}
-.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn:hover{transform:translateY(-1px)}
-.sim{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.9rem}
-#cv{display:block;width:100%;aspect-ratio:26/16;border-radius:8px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+h1,h2,h3{font-family:"Sora",system-ui,sans-serif}
+header.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0;flex-wrap:wrap;
+  background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px)}
+header.top strong{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:1rem}
+header.top strong::before{content:"</> ";color:var(--lilac)}
+nav a{margin-left:.4rem;text-decoration:none;font-weight:600;font-size:.95rem;padding:.35rem .8rem;border-radius:999px}
+nav a:hover{background:var(--butter);color:#2E2A26}
+nav a.navcv{background:var(--lilac);color:#2E2A26;border:2px solid var(--ink);padding:.25rem .9rem;margin-left:.8rem}
+nav a.navcv:hover{background:var(--mint)}
+.hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding:clamp(2rem,6vw,4rem) 0 clamp(3rem,7vw,5rem)}
+.hero::before{content:"";position:absolute;z-index:-1;inset:-2rem -4rem auto auto;width:min(34rem,70vw);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,var(--mint),transparent 60%),radial-gradient(circle at 70% 70%,var(--lilac),transparent 60%);opacity:.55;filter:blur(30px)}
+.chip{display:inline-block;background:var(--mint);color:#2E2A26;border:2px solid var(--ink);border-radius:999px;padding:.2rem .9rem;font-weight:600;font-size:.9rem;margin-bottom:1.2rem}
+h1{font-size:clamp(2.5rem,6.5vw,4.6rem);line-height:1.02;letter-spacing:-.04em;font-weight:800;margin:0 0 1.3rem}
+.lead{font-size:1.2rem;max-width:36ch;margin:0 0 1rem;font-weight:500}
+.sub{color:var(--muted);max-width:46ch;margin:0 0 2rem}
+.btns{display:flex;gap:.9rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:12px;text-decoration:none;font-weight:600;border:2px solid var(--ink);background:var(--surface);
+  box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn.main{background:var(--lilac);color:#2E2A26}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.win{background:var(--surface);border:2px solid var(--ink);border-radius:16px;box-shadow:8px 8px 0 var(--c,var(--lilac));overflow:hidden}
+.bar{display:flex;align-items:center;gap:.4rem;padding:.55rem .9rem;border-bottom:2px solid var(--ink);background:color-mix(in srgb,var(--c,var(--lilac)) 55%,var(--surface));font-family:"JetBrains Mono",monospace;font-size:.78rem;color:#2E2A26}
+.bar i{width:.7rem;height:.7rem;border-radius:50%;border:1.5px solid var(--ink);background:var(--surface)}
+.bar span{margin-left:.5rem}
+.sim .body{padding:.9rem}
+#cv{display:block;width:100%;aspect-ratio:26/16;border-radius:8px;background:color-mix(in srgb,var(--sky) 22%,var(--surface))}
 .simbar{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:.8rem;font-size:.9rem;color:var(--muted)}
 .simbar b{color:var(--ink)}
-.simbar button{font:inherit;font-size:.9rem;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:.3rem .8rem;cursor:pointer}
-.dot{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:var(--accent);margin-right:.35rem}
-.sq{display:inline-block;width:.7rem;height:.7rem;background:var(--ink);margin:0 .35rem 0 .9rem}
-section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.03em;line-height:1.1;margin:0 0 2rem;font-weight:800}
-.row{display:grid;grid-template-columns:170px 1fr;gap:1rem 2rem;padding:1.6rem 0;border-top:1px solid var(--line)}
-.row:first-of-type{border-top:0;padding-top:0}
-.date{color:var(--muted);font-size:.95rem}
-.row h3{font-size:1.4rem;letter-spacing:-.02em;margin:0 0 .5rem;line-height:1.2}
-.row p{margin:0 0 .9rem;max-width:62ch}
-.tags{display:flex;flex-wrap:wrap;gap:.45rem;padding:0;margin:0;list-style:none}
-.tags li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .75rem;font-size:.88rem}
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.skills h3{font-size:1rem;color:var(--muted);font-weight:600;margin:0 0 .8rem}
+.simbar button{font:inherit;font-size:.9rem;font-weight:600;background:var(--butter);border:2px solid var(--ink);color:#2E2A26;border-radius:8px;padding:.2rem .8rem;cursor:pointer}
+.dot{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:var(--peach);border:1.5px solid var(--ink);margin-right:.35rem}
+.sq{display:inline-block;width:.7rem;height:.7rem;background:var(--lilac);border:1.5px solid var(--ink);margin:0 .35rem 0 .9rem}
+section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.03em;line-height:1.1;margin:0 0 .6rem;font-weight:800}
+.intro{color:var(--muted);max-width:56ch;margin:0 0 2rem}
+.vid{aspect-ratio:16/9;background:#2E2A26;display:block;width:100%;border:0}
+.ph{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;padding:1rem;color:#2E2A26;font-weight:600;
+  background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--c,var(--lilac)) 60%,#fff),color-mix(in srgb,var(--c,var(--lilac)) 60%,#fff) 12px,color-mix(in srgb,var(--c,var(--lilac)) 35%,#fff) 12px,color-mix(in srgb,var(--c,var(--lilac)) 35%,#fff) 24px)}
+.ph small{display:block;font-family:"JetBrains Mono",monospace;font-weight:500;margin-top:.3rem;opacity:.8}
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.6rem 2.2rem}
+.card .txt{padding:1.2rem 1.3rem 1.4rem}
+.card h3{font-size:1.2rem;letter-spacing:-.02em;margin:0 0 .2rem;line-height:1.25}
+.date{color:var(--muted);font-size:.9rem;margin:0 0 .7rem}
+.card p.d{margin:0 0 1rem;font-size:1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;list-style:none}
+.tags li{border:1.5px solid var(--ink);background:color-mix(in srgb,var(--c,var(--lilac)) 60%,var(--surface));color:var(--ink);border-radius:999px;padding:.05rem .7rem;font-size:.85rem;font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem 2.2rem}
+.skills .txt{padding:1.1rem 1.3rem 1.3rem}
+.skills h3{font-size:1.05rem;margin:0 0 .8rem}
+.intro-vid{max-width:760px}
+.profil{display:grid;grid-template-columns:minmax(170px,290px) 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.avatar{position:relative;width:min(100%,300px);aspect-ratio:1;margin:0 auto}
+.avatar::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--peach);border:3px solid var(--ink);transform:translate(10px,10px)}
+.avatar img,.avatar .ph{position:relative;display:block;width:100%;height:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid var(--ink);background:var(--lilac)}
+.avatar .ph{font-family:"Sora",sans-serif;font-size:3.2rem;font-weight:800}
+.profil h3{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 .8rem}
+.profil p{margin:0 0 1rem;max-width:60ch}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.2rem;margin:1.4rem 0 0;padding:1.1rem 1.3rem;border:2px solid var(--ink);border-radius:14px;background:var(--surface);box-shadow:6px 6px 0 var(--mint)}
+.facts dt{font-weight:600}.facts dd{margin:0;color:var(--muted)}
+.tl{position:relative;margin:0;padding:0 0 0 2rem;list-style:none;border-left:3px solid var(--ink)}
+.tl li{position:relative;padding:0 0 1.9rem}
+.tl li::before{content:"";position:absolute;left:calc(-2rem - 10px);top:.35rem;width:17px;height:17px;border-radius:50%;background:var(--c);border:3px solid var(--ink)}
+.tl h3{font-size:1.15rem;margin:0 0 .15rem;letter-spacing:-.02em}
+.tl .date{margin:0 0 .3rem}.tl p{margin:0;max-width:62ch}
+.contact .win{padding:0}.contact .txt{padding:1.6rem}
 .contact p{max-width:48ch;color:var(--muted);margin:0 0 1.5rem}
-footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
-@media (max-width:760px){
-  .hero{grid-template-columns:1fr}
-  .row{grid-template-columns:1fr;gap:.3rem}
-  .skills{grid-template-columns:1fr}
-  nav a{margin:0 1rem 0 0}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr}.pgrid,.skills{grid-template-columns:1fr}
+  nav a{margin:0 .2rem 0 0}nav a.navcv{margin-left:0}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+@media (max-width:560px){.profil{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* ===== Affinage : plus sobre, plus élégant ===== */
+:root{--edge:color-mix(in srgb,var(--ink) 14%,transparent);--soft:0 18px 40px -22px color-mix(in srgb,var(--ink) 45%,transparent),0 2px 8px -2px color-mix(in srgb,var(--ink) 10%,transparent)}
+body{font-size:1.05rem;line-height:1.7}
+body::before{opacity:.34}
+h1{font-weight:600;letter-spacing:-.035em;line-height:1.05}
+h2{font-weight:600;letter-spacing:-.025em;margin-bottom:.8rem}
+h3{font-weight:600}
+header.top{border-bottom:1px solid var(--edge);padding:.9rem 0}
+nav a{font-weight:500;color:var(--muted)}
+nav a:hover{background:color-mix(in srgb,var(--lilac) 35%,transparent);color:var(--ink)}
+nav a.navcv{background:var(--ink);color:var(--bg);border:0;padding:.35rem 1.1rem}
+nav a.navcv:hover{background:var(--lilac);color:#2E2A26}
+.chip{border:1px solid var(--edge);background:color-mix(in srgb,var(--mint) 45%,var(--surface));font-weight:500;color:var(--ink)}
+.btn{border:1px solid var(--edge);border-radius:999px;box-shadow:none;padding:.7rem 1.5rem;font-weight:500;background:var(--surface);transition:transform .2s,box-shadow .2s,background .2s}
+.btn.main{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--soft)}
+.win{border:1px solid var(--edge);border-radius:20px;box-shadow:var(--soft)}
+.bar{border-bottom:1px solid var(--edge);background:color-mix(in srgb,var(--c,var(--lilac)) 26%,var(--surface));color:var(--muted);padding:.6rem 1rem}
+.bar i{width:.55rem;height:.55rem;border:0;background:color-mix(in srgb,var(--c,var(--lilac)) 85%,var(--ink) 15%)}
+.sim .body{padding:1rem}
+#cv{border-radius:12px}
+.simbar button{border:1px solid var(--edge);border-radius:999px;background:var(--surface);color:var(--ink);font-weight:500;padding:.25rem .9rem}
+.dot,.sq{border-width:1px}
+.tags li{border:1px solid var(--edge);background:color-mix(in srgb,var(--c,var(--lilac)) 38%,var(--surface));font-weight:500;font-size:.82rem;padding:.1rem .7rem}
+.card:hover{box-shadow:0 26px 50px -24px color-mix(in srgb,var(--c) 90%,var(--ink) 10%),0 2px 8px -2px color-mix(in srgb,var(--ink) 10%,transparent)}
+.card{transition:box-shadow .25s}
+.card h3{font-size:1.15rem}
+section{padding:clamp(3rem,7vw,5.5rem) 0}
+.pgrid{gap:2.8rem 2.4rem}
+.avatar::before{inset:-10px;transform:none;background:none;border:1px solid var(--edge);box-shadow:0 0 0 10px color-mix(in srgb,var(--peach) 30%,transparent)}
+.avatar img,.avatar .ph{border:5px solid var(--surface);box-shadow:var(--soft)}
+.facts{border:1px solid var(--edge);border-radius:20px;box-shadow:var(--soft)}
+.facts dt{font-weight:600}
+.tl{border-left:1px solid var(--edge)}
+.tl li::before{border:3px solid var(--surface);box-shadow:0 0 0 1px var(--edge);width:15px;height:15px;left:calc(-2rem - 8px)}
+@media (prefers-reduced-motion:reduce){.btn,.card{transition:none}.btn:hover{transform:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <strong>Prénom Nom</strong>
+    <strong>Amani Trabelsi</strong>
     <nav aria-label="Navigation principale">
-      <a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+      <a href="#profil">Profil</a><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <div class="hero">
       <div>
+        <span class="chip">Recherche un stage Data / Business Intelligence de 4 à 6 mois, dès mars 2027</span>
         <h1>Je transforme des données en décisions.</h1>
         <p class="lead">Élève ingénieur en Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision, à l’ISIMA.</p>
-        <p class="sub">Je construis des pipelines de données, des API et des tableaux de bord. Je recherche un stage ou une alternance en data ou en développement logiciel.</p>
+        <p class="sub">Je construis des pipelines de données, des API et des tableaux de bord. Je recherche un stage Data / Business Intelligence de 4 à 6 mois, dès mars 2027.</p>
         <div class="btns">
           <a class="btn main" href="#projets">Voir mes projets</a>
           <a class="btn" href="#contact">Me contacter</a>
         </div>
       </div>
-      <div class="sim">
-        <canvas id="cv" role="img" aria-label="Simulation en direct : des loups poursuivent des moutons sur une grille"></canvas>
-        <div class="simbar">
-          <span><span class="dot"></span>Moutons <b id="ns">0</b><span class="sq"></span>Loups <b id="nw">0</b></span>
-          <button id="rst" type="button">Relancer</button>
+      <div class="win sim" style="--c:var(--mint)">
+        <div class="bar"><i></i><i></i><i></i><span>simulation_multi_agents.c</span></div>
+        <div class="body">
+          <canvas id="cv" role="img" aria-label="Simulation en direct : des loups poursuivent des moutons sur une grille"></canvas>
+          <div class="simbar">
+            <span><span class="dot"></span>Moutons <b id="ns">0</b><span class="sq"></span>Loups <b id="nw">0</b></span>
+            <button id="rst" type="button">Relancer</button>
+          </div>
+          <div class="simbar" style="margin-top:.4rem">Démo de mon projet de système multi-agents, en direct.</div>
         </div>
-        <div class="simbar" style="margin-top:.4rem">Démo de mon projet de système multi-agents, en direct.</div>
       </div>
     </div>
 
+    <section id="profil">
+      <h2>Profil</h2>
+      <div class="profil">
+        <div class="avatar"><img id="me" src="photo.jpg" alt="Portrait d’Amani Trabelsi"></div>
+        <div>
+          <h3>Bonjour, moi c’est Amani !</h3>
+          <p>Je suis élève ingénieure à l’ISIMA, en Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision. Ce qui me motive : partir de données brutes et en faire quelque chose d’utile, que ce soit une API, un tableau de bord ou un modèle de classification.</p>
+          <p>J’aime autant structurer un projet de bout en bout que plonger dans les détails d’un jeu de données. J’ai aussi eu la chance de travailler en équipe internationale lors d’un échange à l’OTH Regensburg, en Allemagne.</p>
+          <p>Aujourd’hui, je cherche un stage Data / Business Intelligence de 4 à 6 mois, dès mars 2027, où je pourrai apprendre vite et construire des choses concrètes.</p>
+          <div class="btns" style="margin-top:1.6rem"><a class="btn main" href="cv.pdf" download>Télécharger mon CV</a></div>
+        </div>
+      </div>
+    </section>
+
     <section id="projets">
       <h2>Projets</h2>
-      <div id="plist"></div>
+      <p class="intro">Une démo vidéo pour mes deux projets les plus visuels.</p>
+      <div class="pgrid" id="plist"></div>
     </section>
 
     <section id="competences">
       <h2>Compétences</h2>
       <div class="skills">
-        <div><h3>Langages</h3><ul class="tags"><li>Java</li><li>Python</li><li>C</li><li>SQL</li></ul></div>
-        <div><h3>Développement web</h3><ul class="tags"><li>Spring Boot</li><li>Angular</li><li>Vue.js</li><li>Tailwind CSS</li><li>API REST</li></ul></div>
-        <div><h3>Data</h3><ul class="tags"><li>DuckDB</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Power BI</li><li>PostgreSQL</li></ul></div>
+        <div class="win" style="--c:var(--lilac)"><div class="bar"><i></i><i></i><i></i><span>langages</span></div><div class="txt"><h3>Langages</h3><ul class="tags"><li>Python</li><li>Java</li><li>C</li><li>C++</li><li>SQL</li></ul></div></div>
+        <div class="win" style="--c:var(--sky)"><div class="bar"><i></i><i></i><i></i><span>web</span></div><div class="txt"><h3>Développement web</h3><ul class="tags"><li>Spring Boot</li><li>Spring JDBC</li><li>API REST</li><li>Angular</li><li>Vue.js</li><li>Node.js</li><li>HTML/CSS</li><li>Tailwind CSS</li></ul></div></div>
+        <div class="win" style="--c:var(--mint)"><div class="bar"><i></i><i></i><i></i><span>data</span></div><div class="txt"><h3>Data</h3><ul class="tags"><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>DuckDB</li><li>Power BI</li><li>PostgreSQL</li></ul></div></div>
+        <div class="win" style="--c:var(--peach)"><div class="bar"><i></i><i></i><i></i><span>outils</span></div><div class="txt"><h3>Outils et simulation</h3><ul class="tags"><li>Git</li><li>Linux</li><li>SDL2</li><li>SMA</li><li>RL</li></ul></div></div>
       </div>
     </section>
 
     <section id="parcours">
       <h2>Parcours</h2>
-      <div class="row"><div class="date">Octobre 2026 – présent</div><div><h3>Cours particuliers, Complétude</h3><p>Clermont-Ferrand</p></div></div>
-      <div class="row"><div class="date">Avril &amp; août 2026</div><div><h3>Échange académique, OTH Regensburg (Allemagne)</h3><p>Optimisation et programmation linéaire en équipe internationale : deux semaines en Allemagne, deux semaines en France.</p></div></div>
-      <div class="row"><div class="date">2025 – 2028</div><div><h3>Diplôme d’ingénieur, ISIMA (INP Clermont-Ferrand)</h3><p>Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision.</p></div></div>
-      <div class="row"><div class="date">Étés 2024 &amp; 2025</div><div><h3>Équipière polyvalente, restauration rapide</h3><p>Bordeaux</p></div></div>
+      <ol class="tl">
+        <li style="--c:var(--lilac)"><div class="date">Septembre 2025 – Juin 2028</div><h3>Diplôme d’ingénieur, ISIMA (INP Clermont-Ferrand)</h3><p>Informatique, Data &amp; Systèmes d’Information pour l’Aide à la Décision.</p></li>
+        <li style="--c:var(--peach)"><div class="date">Avril &amp; août 2026</div><h3>Échange académique, OTH Regensburg (Allemagne)</h3><p>Modélisation et résolution de problèmes d’optimisation, en équipe internationale : deux semaines en Allemagne, deux semaines en France.</p></li>
+        <li style="--c:var(--sky)"><div class="date">Septembre 2022 – Mai 2025</div><h3>Licence en informatique, Université de Bordeaux</h3></li>
+        <li style="--c:var(--mint)"><div class="date">Septembre 2021 – Juin 2022</div><h3>Cycle préparatoire intégré, ISSAT Sousse (Tunisie)</h3><p>Spécialité MPI.</p></li>
+        <li style="--c:var(--butter)"><div class="date">Septembre 2020 – Juin 2021</div><h3>Baccalauréat scientifique, Beni-Khalled (Tunisie)</h3><p>Mention Très Bien.</p></li>
+      </ol>
+    </section>
+
+    <section id="langues">
+      <h2>Langues et centres d’intérêt</h2>
+      <div class="skills">
+        <div class="win" style="--c:var(--butter)"><div class="bar"><i></i><i></i><i></i><span>langues</span></div><div class="txt"><h3>Langues</h3><ul class="tags"><li>Arabe : langue natale</li><li>Français : bilingue</li><li>Anglais : B2</li><li>Allemand : A1</li></ul></div></div>
+        <div class="win" style="--c:var(--lilac)"><div class="bar"><i></i><i></i><i></i><span>interets</span></div><div class="txt"><h3>Centres d’intérêt</h3><ul class="tags"><li>Musique</li><li>Voyage</li></ul></div></div>
+      </div>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Travaillons ensemble</h2>
-      <p>Un stage, une alternance ou un projet à discuter ? Écris-moi, je réponds vite.</p>
-      <div class="btns">
-        <a class="btn main" href="mailto:prenom.nom@email.com">prenom.nom@email.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/ton-profil" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/ton-profil" rel="noopener">GitHub</a>
-        <a class="btn" href="#">Télécharger mon CV</a>
+      <div class="win" style="--c:var(--butter)">
+        <div class="bar"><i></i><i></i><i></i><span>contact.sh</span></div>
+        <div class="txt">
+          <h2>Travaillons ensemble</h2>
+          <p>Un stage, une alternance ou un projet à discuter ? Écris-moi, je réponds vite.</p>
+          <div class="btns">
+            <a class="btn main" href="mailto:amani.trabelsi@etu.isima.com">amani.trabelsi@etu.isima.com</a>
+            <a class="btn" href="tel:+33609361881">+33 6 09 36 18 81</a>
+            <a class="btn" href="https://www.linkedin.com/in/ton-profil" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/amani-trabelsi" rel="noopener">GitHub</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>© 2026 Prénom Nom</footer>
+  <footer>© 2026 Amani Trabelsi</footer>
 </div>
 
 <script>
+/* ===== VIDÉOS : mets tes fichiers dans un dossier "videos/" à côté de index.html =====
+   - Fichier MP4 : "videos/mon-projet.mp4"
+   - YouTube : "https://www.youtube.com/embed/ID_DE_LA_VIDEO"
+   Un projet sans chemin de vidéo (v:"") s’affiche sans vidéo. */
 const PROJECTS=[
- {t:"Plateforme d’analyse et de suivi de données de transport",d:"septembre 2026 – présent",p:"API REST en Spring Boot et interface web en Angular. Consolidation de 4 Go de données avec Python, DuckDB et SQL, et tableaux de bord Power BI pour suivre les indicateurs clés. Pistes explorées : détection de fraude, prévision du trafic, optimisation du réseau.",k:["Java","Spring Boot","Angular","Python","DuckDB","SQL","Power BI"]},
- {t:"Analyse et classification de données de capteurs",d:"septembre 2026 – présent",p:"Prétraitement de données issues de plusieurs capteurs, gestion des valeurs manquantes, comparaison et optimisation de modèles de classification.",k:["Python","Scikit-learn","Pandas","NumPy"]},
- {t:"Système multi-agents",d:"juin 2026",p:"Simulation d’une dynamique proie-prédateur (loups et moutons) par apprentissage par renforcement, sur une grille, avec visualisation en temps réel. La démo en haut de la page s’en inspire.",k:["C","SDL2","RL","SMA"]},
- {t:"Application web de gestion et de recherche d’images",d:"février – avril 2025",p:"Application web avec interface responsive et API REST, développée avec Spring Boot, Vue.js et PostgreSQL.",k:["Spring Boot","Vue.js","PostgreSQL","Spring JDBC","Tailwind CSS"]}
+ {t:"Plateforme d’analyse et de suivi de données de transport",d:"septembre 2026 – présent",c:"var(--sky)",v:"videos/transport.mp4",p:"API REST en Spring Boot et interface web en Angular. Consolidation de 4 Go de données avec Python, DuckDB et SQL, et tableaux de bord Power BI pour suivre les indicateurs clés. Pistes explorées : détection de fraude, prévision du trafic, optimisation du réseau.",k:["Java","Spring Boot","Angular","Python","DuckDB","SQL","Power BI"]},
+ {t:"Analyse et classification de données de capteurs",d:"septembre 2026 – présent",c:"var(--mint)",v:"",p:"Prétraitement de données multi-capteurs, gestion des valeurs manquantes, comparaison et optimisation de modèles de classification.",k:["Python","Scikit-learn","Pandas","NumPy"]},
+ {t:"Système multi-agents",d:"juin 2026",c:"var(--peach)",v:"videos/multi-agents.mp4",p:"Simulation d’une dynamique proie-prédateur (loups et moutons) par apprentissage par renforcement, sur une grille, avec visualisation en temps réel. La démo en haut de la page s’en inspire.",k:["C","SDL2","RL","SMA"]},
+ {t:"Application web de gestion et de recherche d’images",d:"février – avril 2025",c:"var(--lilac)",v:"",p:"Application web avec Spring Boot, Vue.js et PostgreSQL. Interface responsive (Vue.js, Tailwind CSS) et API REST avec Spring Boot.",k:["Spring Boot","Vue.js","PostgreSQL","Spring JDBC","Tailwind CSS"]}
 ];
-document.getElementById("plist").innerHTML=PROJECTS.map(x=>
- `<article class="row"><div class="date">${x.d}</div><div><h3>${x.t}</h3><p>${x.p}</p><ul class="tags">${x.k.map(k=>`<li>${k}</li>`).join("")}</ul></div></article>`).join("");
+function media(src,label){
+  if(!src)return "";
+  if(/youtube\.com\/embed|player\.vimeo\.com/.test(src))
+    return `<iframe class="vid" src="${src}" title="${label}" loading="lazy" allowfullscreen></iframe>`;
+  return `<video class="vid" src="${src}" controls preload="metadata" playsinline aria-label="${label}"></video>`;
+}
+function bindFallback(root){
+  root.querySelectorAll("video").forEach(v=>v.addEventListener("error",()=>{
+    const p=document.createElement("div");p.className="ph";
+    p.innerHTML=`<div>Vidéo bientôt disponible<small>${v.getAttribute("src")}</small></div>`;v.replaceWith(p)}));
+}
+document.getElementById("me").addEventListener("error",e=>{
+  const p=document.createElement("div");p.className="ph";
+  p.innerHTML="<div>PN<small>Ajoute photo.jpg</small></div>";e.target.replaceWith(p)});
+const pl=document.getElementById("plist");
+pl.innerHTML=PROJECTS.map(x=>
+ `<article class="win card" style="--c:${x.c}"><div class="bar"><i></i><i></i><i></i><span>${x.v||"projet.md"}</span></div>${x.v?media(x.v,"Démo : "+x.t):""}<div class="txt"><h3>${x.t}</h3><p class="date">${x.d}</p><p class="d">${x.p}</p><ul class="tags">${x.k.map(k=>`<li>${k}</li>`).join("")}</ul></div></article>`).join("");
+bindFallback(pl);
 
 /* Simulation loups / moutons */
 const W=26,H=16,D=[[1,0],[-1,0],[0,1],[0,-1]],cv=document.getElementById("cv"),ctx=cv.getContext("2d");
@@ -173,17 +309,18 @@ function fit(){
   cv.width=Math.round(b.width*q);cv.height=Math.round(b.height*q);draw();
 }
 function draw(){
-  const c=cv.width/W,s=getComputedStyle(document.documentElement);
-  const line=s.getPropertyValue("--line").trim(),acc=s.getPropertyValue("--accent").trim(),ink=s.getPropertyValue("--ink").trim();
+  const c=cv.width/W,s=getComputedStyle(document.documentElement),g=n=>s.getPropertyValue(n).trim();
+  const line=g("--dots"),sh=g("--peach"),wf=g("--lilac"),ink=g("--ink");
   ctx.clearRect(0,0,cv.width,cv.height);
-  ctx.strokeStyle=line;ctx.lineWidth=1;ctx.globalAlpha=.55;ctx.beginPath();
+  ctx.strokeStyle=line;ctx.lineWidth=1;ctx.beginPath();
   for(let i=0;i<=W;i++){ctx.moveTo(i*c,0);ctx.lineTo(i*c,H*c)}
   for(let j=0;j<=H;j++){ctx.moveTo(0,j*c);ctx.lineTo(W*c,j*c)}
-  ctx.stroke();ctx.globalAlpha=1;
-  ctx.fillStyle=acc;
-  for(const a of sheep){ctx.beginPath();ctx.arc((a.x+.5)*c,(a.y+.5)*c,c*.32,0,7);ctx.fill()}
-  ctx.fillStyle=ink;
-  for(const w of wolves)ctx.fillRect(w.x*c+c*.18,w.y*c+c*.18,c*.64,c*.64);
+  ctx.stroke();
+  ctx.lineWidth=Math.max(1,c*.035);ctx.strokeStyle=ink;
+  ctx.fillStyle=sh;
+  for(const a of sheep){ctx.beginPath();ctx.arc((a.x+.5)*c,(a.y+.5)*c,c*.3,0,7);ctx.fill();ctx.stroke()}
+  ctx.fillStyle=wf;
+  for(const w of wolves){ctx.fillRect(w.x*c+c*.15,w.y*c+c*.15,c*.7,c*.7);ctx.strokeRect(w.x*c+c*.15,w.y*c+c*.15,c*.7,c*.7)}
   document.getElementById("ns").textContent=sheep.length;
   document.getElementById("nw").textContent=wolves.length;
 }
