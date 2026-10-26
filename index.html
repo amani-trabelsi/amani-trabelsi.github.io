@@ -278,7 +278,7 @@ body::before{opacity:1;background-image:linear-gradient(to right,color-mix(in sr
         <div class="txt">
           <h2 style="margin-bottom:1.2rem">Contact</h2>
           <div class="btns">
-            <a class="btn main" href="mailto:amani.trabelsi@etu.isima.com">amatrabelsi@gmail.com</a>
+            <a class="btn main" href="mailto:amatrabelsi@gmail.com">amatrabelsi@gmail.com</a>
             <a class="btn" href="tel:+33609361881">+33 (0)6 09 36 18 81</a>
             <a class="btn" href="https://www.linkedin.com/in/amani-trabelsi-21267a22b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a class="btn" href="https://github.com/amani-trabelsi" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -305,7 +305,7 @@ function media(src,label){
   if(!src)return "";
   if(/youtube\.com\/embed|player\.vimeo\.com/.test(src))
     return `<iframe class="vid" src="${src}" title="${label}" loading="lazy" allowfullscreen></iframe>`;
-  return `<video class="vid" src="${src}" controls preload="metadata" playsinline aria-label="${label}"></video>`;
+   return `<video class="vid" src="${src}" controls muted loop playsinline preload="auto" aria-label="${label}"></video>`;
 }
 function bindFallback(root){
   root.querySelectorAll("video").forEach(v=>v.addEventListener("error",()=>{
@@ -319,6 +319,11 @@ const pl=document.getElementById("plist");
 pl.innerHTML=PROJECTS.map(x=>
  `<article class="win card" style="--c:${x.c}"><div class="bar"><i></i><i></i><i></i><span>${x.v||"projet.md"}</span></div>${x.v?media(x.v,"Démo : "+x.t):""}<div class="txt"><h3>${x.t}</h3><p class="date">${x.d}</p><p class="d">${x.p}</p><ul class="tags">${x.k.map(k=>`<li>${k}</li>`).join("")}</ul></div></article>`).join("");
 bindFallback(pl);
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+  const v=e.target;
+  if(e.isIntersecting){v.muted=true;v.play().catch(()=>{})}else{v.pause()}
+}),{threshold:.4});
+pl.querySelectorAll("video").forEach(v=>io.observe(v));
 
 </script>
 </body>
